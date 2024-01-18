@@ -1,0 +1,30 @@
+The provided function mymean calculates the mean (average) of a numeric vector using the formula:
+
+Mean=Sum of all elementsNumber of elements
+
+Mean = Sum of all elements / Number of elements
+L
+Let's evaluate the function with the given data:
+ 
+> assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+> myMean <- function(assignment2) { return(sum(assignment2)/length(assignment2)) }
+> 
+> result <- myMean(assignment2)
+This function works correctly. It calculates the sum of all the elements in the vector assignment2 using sum(assignment2) and divides it by the number of elements in the vector, which is obtained using length(assignment2).
+
+Explanation:
+
+sum(assignment2
+: Calculates the sum of all elements in the vector.
+length(assignment2)
+: Gets the number of elements in the vector.
+sum(assignment2)/length(assignment2)
+: Calculates the mean.
+Reference:
+
+The function uses arithmetic operations and built-in functions in R.
+
+The result variable will contain the mean of the values in the assignment2 vector, and you can print it to see the calculated mean:
+
+> print(result)
+[1] 19.25
