@@ -1,0 +1,105 @@
+---
+title: "Module 12 R Markdown"
+author: "Mike Affinito"
+date: "2024-04-01"
+output: html_document
+---
+
+
+```{r Install}
+# MtcarsUtils Package
+
+## Introduction
+
+#MtcarsUtils is an R package providing basic functions for analyzing the mtcars dataset, which contains information about various car models.
+
+## Installation
+
+#To install the MtcarsUtils package, you can use the following command in R:
+
+
+install.packages("devtools")
+devtools::install_github("MAffinito/MtcarsUtils")
+```
+
+```{r Usage}
+#To use the MtcarsUtils package, load it into your R session using the library() function:
+
+library(MtcarsUtils)
+```
+
+```{r Function 1: get_mtcars()}
+##Description
+#This function returns the mtcars dataset.
+
+##Usage
+
+get_mtcars()
+
+##Arguments
+#None.
+
+##Value
+#The mtcars dataset.
+
+
+##Examples
+
+mtcars_data <- get_mtcars()
+head(mtcars_data)
+# Output: Displays the first 6 rows of the mtcars dataset
+```
+
+```{r Function 2: summary_stats()}
+##Function 2: summary_stats()
+##Description
+#This function provides summary statistics for numeric variables in the mtcars dataset.
+
+
+##Usage
+
+summary_stats(data)
+
+##Arguments
+#data: The mtcars dataset.
+
+##Value
+#Summary statistics (mean, median, min, max, etc.) for numeric variables.
+
+
+
+##Examples
+
+mtcars_data <- get_mtcars()
+summary_stats(mtcars_data)
+# Output: Summary statistics for numeric variables in the mtcars dataset
+```
+
+```{r Function 3: plot_mpg_vs_hp()}
+##Description
+#This function creates a scatter plot of miles per gallon (mpg) against horsepower (hp) for the cars in the mtcars dataset.
+
+
+##Usage
+
+plot_mpg_vs_hp(data)
+
+##Arguments
+#data: The mtcars dataset.
+
+##Value
+#A scatter plot.
+
+##Examples
+
+mtcars_data <- get_mtcars()
+plot_mpg_vs_hp(mtcars_data)
+# Output: Scatter plot of mpg against hp
+```
+
+```{r conclusion}
+#The MtcarsUtils package provides simple yet useful functions for analyzing the mtcars dataset, making it easier for users to explore and understand the data.
+```
+
+
+
